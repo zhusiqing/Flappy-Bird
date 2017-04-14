@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    	*{
+    		margin: 0;
+    		padding: 0;
+    	}
+        .container {
+            width: 800px;
+            height: 600px;
+            margin: 10px auto;
+        }
+        .control{
+        	position: absolute;
+        	width: 800px;
+        	height: 600px;
+        	background-color: rgba(0, 0, 0, .6);
+        	left: 50%;
+        	margin-left: -400px;
+        	top: 10px;
+        	border: 1px solid gray;
+        }
+        .control p{
+        	text-align: center;
+        	font-size: 60px;
+        	padding-top: 200px;
+        }
+        .control button{
+        	position: absolute;
+        	outline: none;
+        	background-color: white;
+        	font-size: 30px;
+        	top: 350px;
+        	left: 50%;
+        	margin-left: -80px;
+        	padding: 0 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container" id="cv1"></div>
+<!-- <div class="control">
+	<p>GAME OVER</p>
+	<button>重新开始</button>
+</div> -->
+
+<script type="text/javascript" src="js/Fly.js"></script>
+<script type="text/javascript" src="js/bird.js"></script>
+<script type="text/javascript" src="js/sky.js"></script>
+<script type="text/javascript" src="js/land.js"></script>
+<script type="text/javascript" src="js/pipe.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+
+<script>
+	// var btn=document.getElementsByTagName("button");
+	// btn.onclick=function(){
+		
+	// };
+	// btn.onclick()
+	// window.addEventListener("click", btn, function(){
+	// 	var g=new Fly.Game();
+	// 	g.gameStart("cv1");
+	// });
+		var g=new Fly.Game();
+		g.gameStart("cv1");
+</script>
+</body>
+</html>
