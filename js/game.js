@@ -38,13 +38,30 @@
 				that.render();
 
 			})
+			
 		},
 		//end
 		gameEnd:function(){
 			//Game Over
 			if(this.f1||this.f2||this.f3||this.f4||this.f5|| this.bObj.curHeight+this.bObj.imgHeight<=0|| this.bObj.curHeight+this.bObj.imgHeight>=Fly.ctx.canvas.height-this.lObj.landHeight){
 				this.flag=false;
+				var ctl=document.querySelector(".control");
+				ctl.style.display="block";
+				var btn=document.getElementsByTagName("button")[0];
+				btn.addEventListener("click", function(){
+
+					location.href=location.href;
+					
+					ctl.style.display="none";
+				});
+				btn.addEventListener("touchstart", function(){
+
+					location.href=location.href;
+					
+					ctl.style.display="none";
+				});
 			}
+
 		},
 		//render
 		render:function(){
