@@ -70,7 +70,10 @@
 			// }
 			window.addEventListener("mousedown",function(){
 				that.speed=-0.3;
-			})
+			});
+			window.addEventListener("touchstart",function(){
+				that.speed=-0.3;
+			});
 		},
 		//角度转弧度
 		toRadian:function (angle) {
