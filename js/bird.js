@@ -68,10 +68,10 @@
 			// window.onmousedown=function(){
 			// 	that.speed=-0.3;
 			// }
-			window.addEventListener("mousedown",function(){
+			document.addEventListener("mousedown",function(){
 				that.speed=-0.3;
 			});
-			window.addEventListener("touchstart",function(){
+			document.addEventListener("touchstart",function(){
 				that.speed=-0.3;
 			});
 		},
